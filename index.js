@@ -4,7 +4,7 @@ const countStream = new CountStream('book');
 
 const http = require('http');
 
-http.get('http://www.manning.com', function(res){
+http.get('http://www.bbc.com', function(res){
 	res.pipe(countStream);
 });
 
